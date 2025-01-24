@@ -13,18 +13,18 @@ public class calcController {
         return "calcSum-form";
     }
 
-    @RequestMapping("/input-num")
+    // @RequestMapping("/input-num")
     
-    public int calculation(String num1, String num2){
-        int result = Integer.parseInt(num1);
-        int result2 = Integer.parseInt(num2);
-        int answer = result + result2;
+    // public int calculation(String num1, String num2){
+    //     int result = Integer.parseInt(num1);
+    //     int result2 = Integer.parseInt(num2);
+    //     int answer = result + result2;
 
-        return "finished2";
+    
 
 
 
     }
 
-}
+
 
