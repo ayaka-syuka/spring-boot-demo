@@ -35,9 +35,14 @@ public class SessionEnsyuController {
 
     @RequestMapping("/mypage")
     public String myPage(){
-        return "result-session-mypage";
+        if(session.getAttribute("email")==null || session.getAttribute("pass") == null){
+            return "redirect:/session-login"; //redirectにすることで他のブラウザでログインした時にURLが変わる　
+        }                                     //redirectのあとは戻りたいURL名(HTMLではない)を指定する
+            return "result-session-mypage";
+        }
+       
     }
 
 
 
-}
+
