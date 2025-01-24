@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form th:action ="@{/session-login/input-info}" method="post">
+        ログイン画面<br>
+        メールアドレス：
+        <input type="text" name="email"><br>
+        パスワード：
+        <input type="password" name="pass"><br>
+        <button>ログイン</button>
+
+
+    </form>
+    
+</body>
+</html>
